@@ -1,2 +1,2 @@
-FROM portainer/portainer
+FROM portainer/portainer-ce
 EXPOSE 9000
