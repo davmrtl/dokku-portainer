@@ -38,7 +38,7 @@ dokku config:set portainer DOKKU_PROXY_PORT_MAP="http:80:9000"
 
 # Add SSL
 dokku config:set --no-restart portainer DOKKU_LETSENCRYPT_EMAIL=your@email.tld
-dokku letsencrypt portainer
+dokku letsencrypt:enable portainer
 
 # Check if ports are mapped correctly
 dokku config:get portainer DOKKU_PROXY_PORT_MAP
